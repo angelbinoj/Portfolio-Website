@@ -1,0 +1,76 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#hero{
+    height:300px;
+    padding-top: 4rem;
+    background:linear-gradient(to right,#1a7f5d,#2faf84);
+    color:white;
+}
+
+#about{
+    background-color: #93bcad;
+}
+#skills,#projects{
+     background-color: #bcd6cd;
+}
+.content {
+background-color: #93bcad;
+padding:30px;
+}
+.list{
+    background-color: #93bcad;
+    display:grid;
+    grid-template-columns: auto auto;
+    padding:40px 0px 40px 0px;
+    display:flex;
+     justify-content: center;
+     align-items: center;
+     gap:30px;
+}
+.list > div{
+   font-size: 20px;
+}
+.project{
+    display:grid;
+    grid-template-columns: auto auto auto;
+}
+.child{
+    display:flex;
+    justify-content: center;
+}
+
+.foot > a > img{
+    margin-right: 10px;
+    border:1px solid transparent;
+    border-radius: 50%;
+}
+/* mobile */
+@media screen and (max-width:768px){
+    .project{
+        display:grid;
+        grid-template-columns: auto;
+    }
+    .child{
+        margin-bottom:15px;
+    }
+}
+/* desktop */
+@media screen and (min-width:769px) and (max-width:1024px){
+    .project{
+        display: grid;
+    grid-template-columns: auto auto;
+    }
+    .project div:nth-child(3){
+       grid-column-start: 1;
+       grid-column-end: 3;
+    }
+
+    
+    .child{
+        margin-bottom:15px;
+    }
+}
