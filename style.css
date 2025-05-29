@@ -3,6 +3,9 @@
     padding:0;
     box-sizing: border-box;
 }
+.logo{
+    margin-left: 45px;
+}
 
 #hero{
     height:300px;
@@ -50,6 +53,9 @@ padding:30px;
 }
 /* mobile */
 @media screen and (max-width:768px){
+    .logo{
+        margin-left: 20px;
+    }
     .project{
         display:grid;
         grid-template-columns: auto;
@@ -57,8 +63,20 @@ padding:30px;
     .child{
         margin-bottom:15px;
     }
+    .list{
+    display:grid;
+    grid-template-columns: auto;
+    padding:20px;
+    gap:15px;
 }
-/* desktop */
+.content{
+    margin-bottom: 15px;
+}
+    .list > div >ul{
+        font-size:17px;
+    }
+}
+/* tablet */
 @media screen and (min-width:769px) and (max-width:1024px){
     .project{
         display: grid;
@@ -68,9 +86,11 @@ padding:30px;
        grid-column-start: 1;
        grid-column-end: 3;
     }
-
-    
     .child{
         margin-bottom:15px;
+    }
+    .list > div >ul{
+        gap:25px;
+        font-size:17px;
     }
 }
